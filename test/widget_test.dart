@@ -13,6 +13,7 @@ void main() {
   testWidgets('Valentine app smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const ValentineApp());
+    await tester.pumpAndSettle();
 
     // Verify that we start with the toggle screen
     expect(find.text('Start Experience ✨'), findsOneWidget);
