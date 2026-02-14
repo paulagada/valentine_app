@@ -121,7 +121,7 @@ class _ValentineHomeState extends State<ValentineHome> {
 
   // Potential Video/Music paths
   static const String musicPath =
-      'audio/music.mp3'; // User should place file here
+      'audio/audio.mp3'; // User should place file here
   static const String videoPath =
       'video/romance.mp4'; // User should place file here
 
@@ -505,7 +505,7 @@ class _SuccessScreenState extends State<SuccessScreen> {
 
                 const SizedBox(height: 40),
                 const Text(
-                  "OUR BEAUTIFUL MOMENTS",
+                  "YOUR BEAUTIFUL FACES",
                   style: TextStyle(
                     color: Colors.white,
                     letterSpacing: 3,
