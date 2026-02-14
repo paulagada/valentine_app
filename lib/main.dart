@@ -2,7 +2,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:confetti/confetti.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:video_player/video_player.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'dart:ui';
@@ -122,8 +121,6 @@ class _ValentineHomeState extends State<ValentineHome> {
   // Potential Video/Music paths
   static const String musicPath =
       'audio/audio.mp3'; // User should place file here
-  static const String videoPath =
-      'video/romance.mp4'; // User should place file here
 
   double? _noBtnTop;
   double? _noBtnLeft;
@@ -187,7 +184,6 @@ class _ValentineHomeState extends State<ValentineHome> {
       return SuccessScreen(
         images: _images,
         confettiController: _confettiController,
-        videoUrl: videoPath,
       );
     }
 
@@ -377,13 +373,11 @@ class _ValentineHomeState extends State<ValentineHome> {
 class SuccessScreen extends StatefulWidget {
   final List<String> images;
   final ConfettiController confettiController;
-  final String videoUrl;
 
   const SuccessScreen({
     super.key,
     required this.images,
     required this.confettiController,
-    required this.videoUrl,
   });
 
   @override
@@ -391,32 +385,13 @@ class SuccessScreen extends StatefulWidget {
 }
 
 class _SuccessScreenState extends State<SuccessScreen> {
-  late VideoPlayerController _videoController;
-  bool _isVideoInitialized = false;
-
   @override
   void initState() {
     super.initState();
-    _initVideo();
-  }
-
-  void _initVideo() {
-    _videoController = VideoPlayerController.asset("assets/${widget.videoUrl}")
-      ..initialize()
-          .then((_) {
-            setState(() {
-              _isVideoInitialized = true;
-            });
-            _videoController.setLooping(true);
-          })
-          .catchError((e) {
-            debugPrint("Video init failed: $e");
-          });
   }
 
   @override
   void dispose() {
-    _videoController.dispose();
     super.dispose();
   }
 
@@ -449,59 +424,25 @@ class _SuccessScreenState extends State<SuccessScreen> {
                 ).animate().fadeIn(delay: 500.ms),
                 const SizedBox(height: 30),
 
-                // Video Section
-                if (_isVideoInitialized)
-                  Container(
-                    width: min(600, MediaQuery.of(context).size.width * 0.9),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(0.2),
-                          blurRadius: 15,
-                        ),
-                      ],
-                    ),
-                    clipBehavior: Clip.antiAlias,
-                    child: AspectRatio(
-                      aspectRatio: _videoController.value.aspectRatio,
-                      child: Stack(
-                        alignment: Alignment.center,
-                        children: [
-                          VideoPlayer(_videoController),
-                          Positioned(
-                            bottom: 10,
-                            right: 10,
-                            child: IconButton(
-                              icon: Icon(
-                                _videoController.value.isPlaying
-                                    ? Icons.pause
-                                    : Icons.play_arrow,
-                                color: Colors.white,
-                                size: 40,
-                              ),
-                              onPressed: () => setState(
-                                () => _videoController.value.isPlaying
-                                    ? _videoController.pause()
-                                    : _videoController.play(),
-                              ),
-                            ),
-                          ),
-                        ],
+                // GIF Section
+                Container(
+                  width: min(300, MediaQuery.of(context).size.width * 0.8),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.pink.withOpacity(0.3),
+                        blurRadius: 15,
+                        spreadRadius: 2,
                       ),
-                    ),
-                  ).animate().scale(duration: 800.ms, curve: Curves.elasticOut)
-                else
-                  Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: Text(
-                      "(Video will appear here once you add romance.mp4 to assets/video/)",
-                      style: TextStyle(
-                        color: Colors.white.withOpacity(0.6),
-                        fontStyle: FontStyle.italic,
-                      ),
-                    ),
+                    ],
                   ),
+                  clipBehavior: Clip.antiAlias,
+                  child: Image.asset(
+                    "assets/images/cat_kisss.gif",
+                    fit: BoxFit.contain,
+                  ),
+                ).animate().scale(duration: 800.ms, curve: Curves.elasticOut),
 
                 const SizedBox(height: 40),
                 const Text(

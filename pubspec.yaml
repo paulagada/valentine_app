@@ -36,7 +36,6 @@ dependencies:
   cupertino_icons: ^1.0.8
   confetti: ^0.7.0
   google_fonts: ^6.1.0
-  video_player: ^2.8.1
   audioplayers: ^5.2.1
   flutter_animate: ^4.5.0
 
@@ -69,8 +68,8 @@ flutter:
     - assets/images/elizabeth_5.jpg
     - assets/images/elizabeth_6.jpg
     - assets/images/elizabeth_7.jpg
+    - assets/images/cat_kisss.gif
     - assets/audio/
-    - assets/video/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
