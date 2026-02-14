@@ -68699,7 +68699,7 @@ m===$&&A.a()
 s=6
 return A.H(m.qt(B.ii),$async$ov)
 case 6:s=7
-return A.H(o.f.iW(0,new A.BM("audio/music.mp3")),$async$ov)
+return A.H(o.f.iW(0,new A.BM("audio/audio.mp3")),$async$ov)
 case 7:q=1
 s=5
 break
@@ -68745,7 +68745,7 @@ k=t.sq
 j=A.d([new A.f_(5,B.cB,A.aG(l,B.ap.C()>>>16&255,B.ap.C()>>>8&255,B.ap.C()&255),B.i,20)],k)
 i=A.oK(A.fY(A.q7("Dear Elizabeth...",A.B6().$3$color$fontSize$fontWeight(B.kd,42,B.av),f),f),f,A.bm(8e5,0))
 h=t.af
-s.push(A.afk(A.aj1(r,A.arN(A.oy(A.afq(A.d([i.jz(A.aly(A.vt(B.i,-0.2,f),f,f,f,A.vt(B.i,0,f))),B.J3,A.oK(A.fY(A.q7("In you, I found my world. \ud83c\udf0e\u2728",A.B6().$2$color$fontSize(B.k5,24),B.bP),f),A.bm(5e5,0),f),B.iN,A.wo(A.fY(A.q7("Will you be my Valentine?",A.B6().$3$color$fontSize$fontWeight(B.fS,34,B.eg),B.bP),f),f,B.jA,A.bm(1e6,0),A.bm(6e5,0),f),B.vK,new A.GQ(B.aU,B.hW,B.ez,B.c4,f,B.we,f,0,A.d([A.wo(A.fY(A.ajD(B.NZ,g.gUK(),A.ajE(f,f,B.fR,f,f,f,8,f,f,B.j,f,f,B.Ax,f,new A.d7(A.iN(20),B.v),f,f,f,f,f)),new A.acZ()),B.i7,f,f,A.bm(1e6,0),B.FL)],h),f)],h),B.cc,B.q3),B.K,new A.ew(o,f,new A.dd(m,m,m,m),n,j,f,B.aF),f,f,B.Ay,p),new A.y2(10,10,f))),f,f))
+s.push(A.afk(A.aj1(r,A.arN(A.oy(A.afq(A.d([i.jz(A.aly(A.vt(B.i,-0.2,f),f,f,f,A.vt(B.i,0,f))),B.J3,A.oK(A.fY(A.q7("In you, I found my world. \ud83c\udf0e\u2728",A.B6().$2$color$fontSize(B.k5,24),B.bP),f),A.bm(5e5,0),f),B.iN,A.wo(A.fY(A.q7("Will you be my Valentine?",A.B6().$3$color$fontSize$fontWeight(B.fS,34,B.eg),B.bP),f),f,B.jA,A.bm(1e6,0),A.bm(6e5,0),f),B.vK,new A.GQ(B.aU,B.hW,B.ez,B.c4,f,B.we,f,0,A.d([A.wo(A.fY(A.ajD(B.NY,g.gUK(),A.ajE(f,f,B.fR,f,f,f,8,f,f,B.j,f,f,B.Ax,f,new A.d7(A.iN(20),B.v),f,f,f,f,f)),new A.acZ()),B.i7,f,f,A.bm(1e6,0),B.FL)],h),f)],h),B.cc,B.q3),B.K,new A.ew(o,f,new A.dd(m,m,m,m),n,j,f,B.aF),f,f,B.Ay,p),new A.y2(10,10,f))),f,f))
 p=g.r
 r=p==null?A.ce(a,f,q).w.a.b/2+150:p
 p=g.w
@@ -68804,7 +68804,7 @@ o=p.a
 n=J.arp(o)
 j.push(A.wo(A.fY(A.oy(new A.BJ(n,A.wX(B.a0,A.d([new A.xH(p,l),A.vS(10,A.atN(l,A.ajY(o.f?B.AS:B.AT,B.j,l,40),l,l,new A.acr(m),l,l),l,l,l,10,l,l)],k),B.dy),l),B.c3,new A.ew(l,l,l,r,q,l,B.aF),l,l,l,s),l),l,B.jA,l,A.bm(8e5,0),l))}else j.push(new A.ja(B.Aw,A.q7("(Video will appear here once you add romance.mp4 to assets/video/)",A.no(l,l,A.aG(153,B.j.C()>>>16&255,B.j.C()>>>8&255,B.j.C()&255),l,l,l,l,l,l,l,l,l,B.kI,l,l,l,l,!0,l,l,l,l,l,l,l,l),l),l))
 j.push(B.vJ)
-j.push(B.NY)
+j.push(B.NZ)
 m.a.toString
 j.push(A.a4z(new A.EM(new A.a4E(new A.acs(m),7,!0,!0,!0,l),B.Au,B.aU,!1,l,l,l,!1,l,7,B.b0,l,l,B.al,B.aA,l),450,l))
 j.push(B.vJ)
@@ -74190,10 +74190,10 @@ B.Mx=new A.m(!0,B.D,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.MR=new A.m(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.f,null,null,null,"blackRedwoodCity labelMedium",null,null,null,null)
 B.K1=new A.m(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.f,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.NX=new A.cB(B.LJ,B.KI,B.LK,B.Md,B.Kp,B.Kx,B.L_,B.M7,B.Lb,B.MA,B.JV,B.Kc,B.Mx,B.MR,B.K1)
-B.M9=new A.m(!0,B.j,null,null,null,null,null,B.av,null,3,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.NY=new A.jo("OUR BEAUTIFUL MOMENTS",null,B.M9,null,null)
 B.LX=new A.m(!0,null,null,null,null,null,22,B.av,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.NZ=new A.jo("YES! \u2764\ufe0f",null,B.LX,null,null)
+B.NY=new A.jo("YES! \u2764\ufe0f",null,B.LX,null,null)
+B.M9=new A.m(!0,B.j,null,null,null,null,null,B.av,null,3,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.NZ=new A.jo("YOUR BEAUTIFUL FACES",null,B.M9,null,null)
 B.LL=new A.m(!0,B.ap,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.O_=new A.jo("No \ud83d\ude48",null,B.LL,null,null)
 B.Ns=new A.m(!0,null,null,null,null,null,20,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
